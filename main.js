@@ -20,6 +20,13 @@ function renderTask(taskValue) {
 	tasks.appendChild(task)
 }
 
+//Makes 'Enter' key a trigger
+addTaskInput.addEventListener('keyup', function() {
+	if (event.keyCode === 13) {
+		btn.click()
+	}
+})
+
 //Adds new task when btn is clicked
 btn.addEventListener('click', function() {
 	if (addTaskInput.value !== '') {
