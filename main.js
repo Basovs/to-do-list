@@ -14,7 +14,7 @@ function renderTask(taskValue) {
 	deleteBtn.classList.add('delete-btn')
 	deleteBtn.src = 'img/delete.svg'
 	deleteBtn.addEventListener('click', function() {
-		task.classList.add('hide')
+		task.remove()
 	})
 	task.appendChild(deleteBtn)
 	tasks.appendChild(task)
